@@ -221,7 +221,7 @@ export const ButtonFront = styled.button`
   box-shadow: ${({ disabled }) => disabled ? 'inset 0px 2px 1px rgba(46, 49, 55, 0.15), inset 0px 0px 4px rgba(20, 20, 55, 0.3)' : 'none'};
 
   &:hover {
-    opacity: 0;
+    opacity: ${({disableHover}) => disableHover ? 1 : 0};
   }
   &:focus {
     outline: none;
